@@ -8,8 +8,6 @@ app = Flask(__name__)
 Web Hook activated spark bot
 Run this module for traditional implementation using Flask
 '''
-
-
 @app.route('/Spark-WH', methods=['POST'])
 def spark_bot():
     data = request.json

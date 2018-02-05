@@ -16,7 +16,7 @@ def spark_bot(msg_id):
     logging.basicConfig(filename='spark_bot_logs.log', level=logging.DEBUG)
     logging.debug(time_stamp() + ' New Web Hook Request, message ID: ' + str(msg_id))
 
-    #   Bot Dictionary defines phrases that will trigger different actions and responses for the bot
+    # Bot Dictionary defines phrases that will trigger different actions and responses for the bot
     # If no valid trigger phrase is sent, use the default action and response
     response = BOT_DICTIONARY['defaults']['response']
     action = BOT_DICTIONARY['defaults']['action']
